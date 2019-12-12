@@ -29,5 +29,8 @@
   },
   "engines": {
     "node": ">=4.2.0"
+  },
+  "dependencies": {
+    "bespoke-theme-carousel": "^0.1.1"
   }
 }

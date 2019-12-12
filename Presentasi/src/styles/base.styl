@@ -2,9 +2,14 @@
 
 *, ::before, ::after
   box-sizing inherit
-
+*
+  color #3d3d3d
 body
-  color #5174EE
+  color #2c3e50
+  background white
+
+section
+  border 0 
 
 html
   box-sizing border-box
@@ -17,16 +22,24 @@ p
 
 ul li
   list-style-type none
-  text-align center
 
 ol li
-  list-style-type square
+  list-style-type decimal
 
 ul, ol
   padding 0 0 0 20px
 
 figure
   margin 0
+
+.judul-besar
+  font-size 36px
+
+.sub-judul
+  font-size 28px
+
+img
+  width 10%
 
 img, video
   vertical-align middle
@@ -55,7 +68,10 @@ img, video
   overflow hidden
   // NOTE force opacity to start at 0 to avoid transition on load when using bespoke-scale
   opacity 0
-  background-color #fff
+  padding 0 32px
+  background-color transparent
+  border-radius 0
+  box-shadow 0px 5px 5px 5px rgba(0,0,0,.3)
   position absolute
   top 50%
   left 50%
@@ -67,7 +83,7 @@ img, video
   flex-direction column
   align-items center
   justify-content center
-  transition opacity 200ms ease-in-out 150ms
+  transition opacity 150ms cube 160ms
 
 .bespoke-active
   pointer-events auto
